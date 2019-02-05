@@ -1,0 +1,463 @@
+body {
+    background-position: center;
+    background: url(../img/bg.jpg) no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+/* 顶部导航 */
+
+.nav {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background: #fbfbfb;
+}
+
+.nav-r li {
+    float: left;
+}
+
+.nav-r li a {
+    padding: 0 10px;
+    color: #e94a37;
+}
+
+.nav-r .black {
+    color: #333;
+}
+
+.nav-r li a:hover {
+    display: inline-block;
+    height: 48px;
+    color: #e94a37;
+    border-bottom: 2px solid #e94a37;
+    background: #eee;
+}
+
+
+/* 顶部导航 结束 */
+
+
+/* 页面主体部分 开始 */
+
+.main {
+    overflow: hidden;
+}
+
+.main-warp {
+    position: relative;
+    height: 1080px;
+}
+
+
+/* 页面主体 logo */
+
+.main-warp-logo {
+    position: absolute;
+    left: 0;
+    top: 20px;
+}
+
+
+/* 页面左侧 侧边栏 */
+
+.main-warp-bar {
+    position: absolute;
+    top: 140px;
+    left: 0;
+}
+
+.main-warp-bar li {
+    width: 108px;
+    height: 66px;
+    line-height: 66px;
+    text-align: center;
+    background: url(../img/icon-mp.png) no-repeat;
+}
+
+.main-warp-bar .icon1 {
+    background-position: 0px -28px;
+}
+
+.main-warp-bar .icon2 {
+    background-position: 0px -94px;
+}
+
+.main-warp-bar .icon3 {
+    background-position: 0px -160px;
+}
+
+.main-warp-bar .icon4 {
+    background-position: 0px -226px;
+}
+
+.main-warp-bar .icon5 {
+    background-position: 0px -292px;
+}
+
+.main-warp-bar .icon6 {
+    background-position: 0px -358px;
+}
+
+.main-warp-bar .icon7 {
+    background-position: 0px -424px;
+}
+
+.main-warp-bar .icon8 {
+    background-position: 0px -490px;
+}
+
+.main-warp-bar .icon9 {
+    background-position: 0px -556px;
+}
+
+.main-warp-bar .icon10 {
+    background-position: 0px -623px;
+}
+
+.main-warp-bar .icon11 {
+    background-position: 0px -688px;
+}
+
+.main-warp-bar .icon12 {
+    background-position: 0px -754px;
+}
+
+.main-warp-bar .icon13 {
+    background-position: 0px -820px;
+}
+
+.main-warp-bar li a {
+    display: block;
+    font-size: 0;
+    transform: rotate(-90deg);
+    -webkit-transition: -webkit-transform 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: transform 1s;
+}
+
+.main-warp-bar a:hover {
+    font-size: 16px;
+    color: #fff;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: url(../img/icon-mpact.png) no-repeat center;
+}
+
+.main-warp-bar li a.fixed {
+    font-size: 16px;
+    color: #fff;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background: url(../img/icon-mpact.png) no-repeat center;
+}
+
+/* 页面左侧 侧边栏 结束 */
+
+
+/* 页面icon 图标链接 开始 */
+
+.main-warp-link {
+    position: absolute;
+    left: 34px;
+    bottom: 30px;
+}
+
+.main-warp-link a {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    background: url(../img/icon-nav-s.png) no-repeat;
+}
+
+.main-warp-link .sprite1 {
+    background-position: 0px 0px;
+}
+
+.main-warp-link .sprite2 {
+    background-position: -60px 0px;
+}
+
+.main-warp-link .sprite3 {
+    background-position: -121px 0px;
+}
+
+
+/* 页面icon 图标链接 结束 */
+
+
+/* 页面page heros */
+
+.main-warp-page {
+    margin-left: 130px;
+}
+
+.main-warp-page-txt {
+    position: absolute;
+    display: none;
+    top: 150px;
+    width: 360px;
+    z-index: 2;
+}
+
+.main-warp-page-txt p {
+    color: #9E8C5E;
+}
+
+.main-warp-page-txt .p2 {
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.main-warp-page-txt .pic1 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+/* 视频模块 */
+.audio {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    margin-left: 40px;
+    margin-top: 60px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    transform: rotate(45deg);
+}
+.video {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+    z-index: 7;
+    /* background: rgba(0, 0, 0, .5); */
+    display: none;
+    width: 1080px;
+}
+.video-bg {
+    display: none;
+    position: absolute;
+    left: -135px;
+    top: -155px;
+    z-index: 999;
+    width: 1366px;
+    height: 1100px;
+    background: rgba(0, 0, 0, .5);
+}
+.btn-close {
+    position: absolute;
+    right: 107px;
+    top: 250px;
+    z-index: 100;
+    width: 35px;
+    height: 35px;
+    background: rgba(0, 0, 0, .2) url(../img/btn-close.png) no-repeat;
+    cursor: pointer;
+}
+
+.audio .img1 {
+    position: absolute;
+    top: -48px;
+    left: -32px;
+    background: rgba(0, 0, 0, .5);
+    padding: 91px; 
+    z-index: 9;
+    transform:rotate(-45deg);
+}
+.audio .img2 {
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    z-index: 2;
+    transform:rotate(-45deg);
+}
+
+/* 英雄大图   */
+.main-warp-page-heros {
+    position: absolute;
+    right: -1022px;
+}
+.main-warp-page-heros img {
+    position: absolute;
+    top: 0px;
+    left: 350px;
+    height: 1080px;
+    z-index: 1;
+    -webkit-transition: -webkit-transform 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: transform 1s;
+    transform: translateX(0px);
+}
+
+.main-warp-page-heros img:hover {
+    -webkit-transition: -webkit-transform 1s;
+    /* For Safari 3.1 to 6.0 */
+    transition: transform 1s;
+    transform: translateX(-30px);
+}
+/* 页面page heros 结束 */
+
+/* 页面主体 右侧 侧边栏 开始 */
+.main-warp-r {
+    position: relative;
+    /* width: 365px;
+    height: 1080px; */
+    z-index: 6;
+}
+
+.main-warp-r-bg {
+    position: absolute;
+    right: -455px;
+    width: 365px;
+    height: 1080px;
+    text-align: center;
+    background: url(../img/bg-rtable.png) no-repeat;
+}
+
+.main-warp-r-btn {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -15px;
+    margin: auto;
+    width: 15px;
+    height: 165px;
+    background: url(../img/btn-lnav-off.png) no-repeat;
+}
+
+.main-warp-r-btn img {
+    position: absolute;
+    top: 66px;
+    left: 6px;
+    transform: rotateY(180deg);
+}
+
+.main-warp-r-btn .transition {
+    transform: rotateY(0deg);
+}
+.main-warp-r-title img {
+    margin-left: 15px;
+    margin-top: 66px;
+    margin: 66px 0px 20px 15px;
+}
+
+.main-warp-r-tab div {
+    position: relative;
+    width: 175px;
+    height: 175px;
+    line-height: 175px;
+    text-align: center;
+    margin-left: 6px;
+}
+.main-warp-r-tab div.act {
+    background: url(../img/jn.png) no-repeat;
+}
+
+.main-warp-r-tab .tab-left span.show {
+    display: block;
+}
+.main-warp-r-tab .tab-left span {
+    display: none;
+}
+.tab-left img {
+    position: absolute;
+    left: 46px;
+    top: 47px;
+    border-radius: 50%;
+    border: 1px solid #9E8C5E;
+}
+
+.main-warp-r-tab {
+    cursor: pointer;
+}
+
+.main-warp-r-tab .tab-left span,
+.tab-right span {
+    position: absolute;
+    top: 68px;
+    left: 68px;
+}
+
+.main-warp-r-content p {
+    font-size: 16px;
+    color: #9E8C5E;
+    text-align: left;
+    padding: 30px 16px;
+}
+.tab-content-item {
+    position: absolute;
+}
+.main-warp-r-content img {
+    margin-bottom: 30px;
+}
+
+.main-warp-r-content .tab-content-item.active {
+    display: block;
+}
+.main-warp-r-content .tab-content-item {
+    display: none;
+}
+
+
+
+
+/* 页面主体 右侧 侧边栏 结束 */
+
+
+/* footer页面底部 开始 */
+
+.footer {
+    height: 180px;
+    width: 100%;
+    background: #222;
+    padding: 50px 0px;
+}
+
+.footer .center {
+    margin-left: 200px;
+}
+
+.center-t-logo {
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+.center-t-link a,
+span {
+    font-size: 14px;
+    color: #666;
+}
+
+.center-t-link span {
+    margin: 0 2px;
+}
+
+.center-c {
+    margin-bottom: 15px;
+}
+
+.center-d-copyright img {
+    margin-right: 10px;
+}
+
+.footer .center-c p,
+.center-d-text p {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+
+
+/* footer页面底部 结束 */
